@@ -1,5 +1,4 @@
-﻿using System.Runtime;
-
+﻿using System.Runtime.CompilerServices;
 
 namespace HelloWorld
 {
@@ -7,13 +6,11 @@ namespace HelloWorld
     {
         static void Main(string[] args)
         {
-            int ganzZahl = 0;
-            double myDouble = 5.5;
-            Console.WriteLine(myDouble);
-            ganzZahl = (int)myDouble;
-            Console.WriteLine(ganzZahl);
-
-
+            for(int zaehlvariable=0;zaehlvariable<10;zaehlvariable++)
+            {
+                Console.WriteLine(zaehlvariable);
+            }
+            
         }
     }
 }
