@@ -6,16 +6,18 @@ namespace HelloWorld
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Gebe mir deinen Namen");
-             string name = Console.ReadLine();
+            Console.WriteLine("Was ist die erste Zahl?");
+             string zahl1 = Console.ReadLine();
 
-            Console.WriteLine("Sage mir wie alt du bist");
-            string age = Console.ReadLine();
+            Console.WriteLine("Was ist die zweite Zahl?");
+            string zahl2 = Console.ReadLine();
 
-            int alter = Convert.ToInt16(age);
-            int alterInZehn = alter + 10;
+            int zahleins = Convert.ToInt16(zahl1);
+            int zahlzwei = Convert.ToInt16(zahl2);
 
-            Console.WriteLine($"Hello,  {name} ! Dein Alter ist  {age} . In zehn Jahren bist du  {alterInZehn}" ) ;
+            int zahl1PlusZahl2 = zahleins + zahlzwei ;
+
+            Console.WriteLine($"Das Ergebnis aus {zahl1} +{zahl2} =  {zahl1PlusZahl2}" ) ;
         }
     }
 }
