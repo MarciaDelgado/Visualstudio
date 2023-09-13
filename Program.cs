@@ -7,9 +7,11 @@ namespace HelloWorld
     {
         static void Main(string[] args)
         {
-            int x, y, z;
-            x = y = z = 50;
-            Console.WriteLine(x + y + z);
+            int ganzZahl = 0;
+            double myDouble = 5.5;
+            Console.WriteLine(myDouble);
+            ganzZahl = (int)myDouble;
+            Console.WriteLine(ganzZahl);
 
 
         }
