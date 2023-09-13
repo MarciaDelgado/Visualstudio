@@ -1,23 +1,52 @@
 ﻿using System.Runtime;
 
+
 namespace HelloWorld
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Was ist die erste Zahl?");
-             string zahl1 = Console.ReadLine();
+            string text = "Das ist ein Text ";
+            Console.WriteLine(text);
 
-            Console.WriteLine("Was ist die zweite Zahl?");
-            string zahl2 = Console.ReadLine();
+            int zahl = 21;
+            Console.WriteLine(zahl);
 
-            int zahleins = Convert.ToInt16(zahl1);
-            int zahlzwei = Convert.ToInt16(zahl2);
+            double kommazahl =21.3 ;
+            Console.WriteLine(kommazahl);
 
-            int zahl1PlusZahl2 = zahleins + zahlzwei ;
+            float weiterFliesKommazahl = 26.333333673F;
+            Console.WriteLine(weiterFliesKommazahl);
 
-            Console.WriteLine($"Das Ergebnis aus {zahl1} +{zahl2} =  {zahl1PlusZahl2}" ) ;
+            decimal fliesKomma = 26.5M;
+            Console.WriteLine(fliesKomma);
+
+
+            bool wahrheitswert = true ;
+            Console.WriteLine(wahrheitswert);
+            bool anders = false ;
+            Console.WriteLine(anders);
+
+            char buchstabe =(char)48 ;
+            Console.WriteLine(buchstabe);
+            
+            long langezahl = 123456789123456789;
+            Console.WriteLine(langezahl);
+
+            uint positiveZahlen = 123;
+            Console.WriteLine(positiveZahlen);
+
+            string[] myArray = new string [10];
+            myArray[0] = "erster Wert";
+            myArray[9] = "letzer Wert";
+
+            List<string> myList = new List<string>();
+            myList.Add("Marcia");
+            myList.Add("Benjamin");
+            Console.WriteLine(myList[0]);
+            Console.WriteLine(myList[1]);
+
         }
     }
 }
