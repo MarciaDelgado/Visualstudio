@@ -7,31 +7,31 @@ namespace HelloWorld
     {
         static void Main(string[] args)
         {
-            string text = "Das ist ein Text ";
-            Console.WriteLine(text);
+            string myText = "Hello World";
+            Console.WriteLine(myText);
 
-            int zahl = 21;
-            Console.WriteLine(zahl);
+            int myNum = 9;
+            Console.WriteLine(myNum);
 
-            double kommazahl =21.3 ;
+            double kommazahl =8.99;
             Console.WriteLine(kommazahl);
 
-            float weiterFliesKommazahl = 26.333333673F;
+            /*float weiterFliesKommazahl = 26.333333673F;
             Console.WriteLine(weiterFliesKommazahl);
 
             decimal fliesKomma = 26.5M;
-            Console.WriteLine(fliesKomma);
+            Console.WriteLine(fliesKomma);*/
 
 
-            bool wahrheitswert = true ;
+            bool wahrheitswert = false ;
             Console.WriteLine(wahrheitswert);
-            bool anders = false ;
-            Console.WriteLine(anders);
+           /* bool anders = false ;
+            Console.WriteLine(anders);*/
 
-            char buchstabe =(char)48 ;
+            char buchstabe =(char)65 ;
             Console.WriteLine(buchstabe);
             
-            long langezahl = 123456789123456789;
+            /*long langezahl = 123456789123456789;
             Console.WriteLine(langezahl);
 
             uint positiveZahlen = 123;
@@ -45,7 +45,7 @@ namespace HelloWorld
             myList.Add("Marcia");
             myList.Add("Benjamin");
             Console.WriteLine(myList[0]);
-            Console.WriteLine(myList[1]);
+            Console.WriteLine(myList[1]);*/
 
         }
     }
