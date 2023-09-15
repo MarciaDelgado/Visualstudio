@@ -18,12 +18,12 @@ namespace HelloWorld
             while(zahlValue != numberToGuess) {
                  if(zahlValue<numberToGuess)
                 {
-                    Console.WriteLine("Die Zahl wuerde nicht getroffen . Tipp : Die Zahl ist kleiner als die geheime Zahl.");
+                    Console.WriteLine("Die Zahl wuerde nicht getroffen . Tipp : Die  geheime Zahl st kleiner.");
                 }
 
                 else if(zahlValue>numberToGuess)
                 {
-                    Console.WriteLine("Die Zahl wuerde nicht getroffen . Tipp : Die Zahl ist großer als die geheime Zahl.");
+                    Console.WriteLine("Die Zahl wuerde nicht getroffen . Tipp : Die geheime Zahl ist großer.");
                 }
                 Console.WriteLine("Deine zahl ist falsch, gebe eine neue ein");
                 zahlValue = Convert.ToInt32(Console.ReadLine());
