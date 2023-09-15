@@ -1,4 +1,5 @@
 ﻿using System.Runtime.CompilerServices;
+using System.Security.Cryptography.X509Certificates;
 using System.Threading.Tasks.Dataflow;
 
 namespace HelloWorld
@@ -6,23 +7,31 @@ namespace HelloWorld
     class Program
     {
         static void Main(string[] args)
-        {
-           Console.WriteLine("Schreiben Sie einen Text");
-            string text= Console.ReadLine();
+        {          
+            int zahl1=10;
+            int zahl2=2;
+           
+           Console.WriteLine("Wählen ein Zeichnen aus");
+           string zeichnen=Console.ReadLine();
 
-            string newtext1= text.Replace('U', 'G');
-            string newtext2= newtext1.Replace('u','g');
-             
-
-            Console.WriteLine(newtext2);
-
+           if(zeichnen =="+")
+           {
+                Console.WriteLine(zahl1 + zahl2);    
            }
-
-           
-           
-
-          
+           else if (zeichnen =="-")
+           {
+                Console.WriteLine(zahl1 - zahl2);
+                
+           }
+           else if (zeichnen =="/")
+           {
+                Console.WriteLine(zahl1 / zahl2);
+                
+           }
+           else if (zeichnen =="*")
+           {
+                Console.WriteLine(zahl1 * zahl2);
+           }
         }
-    
-        
     }
+}
