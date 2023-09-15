@@ -14,23 +14,30 @@ namespace HelloWorld
            Console.WriteLine("Wählen ein Zeichnen aus");
            string zeichnen=Console.ReadLine();
 
-           if(zeichnen =="+")
+           switch(zeichnen)
            {
-                Console.WriteLine(zahl1 + zahl2);    
+            case "+":
+             Console.WriteLine(zahl1 + zahl2);
+             break;
+
+            case "-":
+             Console.WriteLine(zahl1 - zahl2);
+             break;
+
+            case "/":
+             Console.WriteLine(zahl1 / zahl2);
+             break;
+
+            case "*":
+             Console.WriteLine(zahl1 * zahl2);
+             break;   
+
+            default:
+            Console.WriteLine("Ich kenne diesen Operator nicht ");
+            break;
+
            }
-           else if (zeichnen =="-")
-           {
-                Console.WriteLine(zahl1 - zahl2);
-                
-           }
-           else if (zeichnen =="/")
-           {
-                Console.WriteLine(zahl1 / zahl2);
-                
-           }
-           else if (zeichnen =="*")
-           {
-                Console.WriteLine(zahl1 * zahl2);
+           
            }
         }
     }
