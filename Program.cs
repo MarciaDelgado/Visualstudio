@@ -8,10 +8,11 @@ namespace HelloWorld
     {
         static void Main(string[] args)
         {           
-            int zahl1 = 5;
-            int zahl2 = 10;
+            string zahl1 = Console.ReadLine();
+            string zahl2 = Console.ReadLine();
             Console.WriteLine("Wählen ein Zeichnen aus");
             string zeichnen=Console.ReadLine();
+            
             switch(zeichnen)
             {            
                 case "+":
@@ -35,28 +36,61 @@ namespace HelloWorld
                     break;
            }
         }
-        
-        static void  Addition(int zahl1, int zahl2)
+         
+
+        static int AdditionWithReturn(string zahl1, string zahl2)
+        {
+            int numero1=Convert.ToInt32(zahl1);
+            int numero2=Convert.ToInt32(zahl2);
+            return numero1 + numero2;
+        }
+        static void Addition(string zahl1, string zahl2)
+        {
+            int numero1=Convert.ToInt32(zahl1);
+            int numero2=Convert.ToInt32(zahl2);
+            Console.WriteLine(numero1+numero2);
+        }
+
+        static void Addition(int zahl1, int zahl2)
         {
             Console.WriteLine(zahl1+zahl2);
         }
           
+
+         static void  Substract(string zahl1, string zahl2)
+        {
+            int numero1=Convert.ToInt32(zahl1);
+            int numero2=Convert.ToInt32(zahl2);
+            Console.WriteLine(numero1-numero2);
+        } 
          static void Substract(int zahl1, int zahl2) 
          {
             Console.WriteLine(zahl1-zahl2);
          }
          
+
+         static void  Division(string zahl1, string zahl2)
+        {
+            int numero1=Convert.ToInt32(zahl1);
+            int numero2=Convert.ToInt32(zahl2);
+            Console.WriteLine(numero1/numero2);
+        }
           static void Division(int zahl1, int zahl2) 
          {
             Console.WriteLine(zahl1/zahl2);
          }
          
+         
 
-          static void Multiplication(int zahl1, int zahl2) 
-         {
+        static void  Multiplication(string zahl1, string zahl2)
+        {
+            int numero1=Convert.ToInt32(zahl1);
+            int numero2=Convert.ToInt32(zahl2);
+            Console.WriteLine(numero1*numero2);
+        }
+        static void Multiplication(int zahl1, int zahl2) 
+        {
             Console.WriteLine(zahl1*zahl2);
-         }
-
-
         }
     }
+}
